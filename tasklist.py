@@ -7,5 +7,13 @@ def add_task():
     if task:
         tasklist.append(task)
 
-add_task()
+# An dieser Stelle bauen wir den show_tasklist
+def show_tasklist():
+    if tasklist:
+        print("\n********** Deine Aufgabenliste **********")
+        for task in tasklist:
+                print(task)
+    else:
+        print("\n********** Deine Aufgabensliste ist leer **********")
 
+        
